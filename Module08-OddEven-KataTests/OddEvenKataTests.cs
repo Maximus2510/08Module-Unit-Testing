@@ -33,12 +33,12 @@ namespace Tests
         public void PrintNumbersIfTheyArePrimeAndNotEvenOrOdd()
         {
             //Arrange
-            int number = 22;
-            string expected = "22";
+            int number = 19;
+            string expected = "19";
             //Act
             string actual = OddEvenKata.PrintNumbers(number);
             //Assert
-            Assert.AreEqual(expected, actual);
+            Assert.AreEqual(expected.ToString(), actual.ToString());
         }
     }
 }

@@ -7,13 +7,13 @@
         {
             return "Even";
         }
-        else if (IsOdd(number))
+        else if (IsPrime(number))
         {
-            return "Odd";
+            return number.ToString();
         }
         else
         {
-            return number.ToString();
+            return "Odd";
         }
     }
 
@@ -28,13 +28,24 @@
         {
             return false;
         }
-        for (int i = 3; i < Math.Sqrt(number); i += 2)
+        return true;
+    }
+
+    public static bool IsPrime(int number)
+    {
+        if (number <= 1)
         {
-            if(number % i == 0)
+            return false;
+        }
+
+        for (int i = 2; i <= Math.Sqrt(number); i++)
+        {
+            if (number % i == 0)
             {
                 return false;
             }
         }
+
         return true;
     }
 
