@@ -38,7 +38,7 @@ namespace Tests
             //Act
             string actual = OddEvenKata.PrintNumbers(number);
             //Assert
-            Assert.AreEqual(expected.ToString(), actual.ToString());
+            Assert.AreEqual(expected, actual);
         }
     }
 }
