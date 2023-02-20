@@ -29,6 +29,7 @@ namespace Tests
             Assert.AreEqual("Odd", result);
         }
 
+        [TestMethod()]
         public void PrintNumbersIfTheyArePrimeAndNotEvenOrOdd()
         {
             //Arrange
